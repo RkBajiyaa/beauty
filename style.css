@@ -42,27 +42,32 @@ body {
   color: #d63384;
 }
 
-./* HOME (TEXT ONLY, PROPER HEIGHT) */
-.home {
-  min-height: 70vh;
-  padding: 160px 40px 120px;
-  text-align: center;
+/* HERO SECTION (RESTORED – FULL & CLEAN) */
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1487412912498-0447578fcca8")
+    center / cover no-repeat;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding-top: 80px;
 }
 
-.home h1 {
-  font-size: 42px;
+.hero h1 {
+  font-size: 46px;
   margin-bottom: 12px;
 }
 
-.home p {
+.hero p {
   font-size: 18px;
   margin-bottom: 30px;
 }
 
-.home-buttons {
+.hero-buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -71,7 +76,7 @@ body {
 
 /* SECTIONS */
 .section {
-  padding: 90px 60px;
+  padding: 80px 60px;
   text-align: center;
 }
 
