@@ -10,11 +10,8 @@
 <body>
 
   <!-- ================= HEADER ================= -->
-  <header>
-    <div>
-      <h2>Bhavana Beauty Parlour</h2>
-    </div>
-
+  <header class="header">
+    <h2>Bhavana Beauty Parlour</h2>
     <nav>
       <a href="#home">Home</a>
       <a href="#services">Services</a>
@@ -26,89 +23,108 @@
   </header>
 
   <!-- ================= HERO ================= -->
-  <section id="home">
-    <h1>Professional Makeup & Beauty Parlour in Jaipur</h1>
-    <p>Bridal Makeup • Party Makeup • Engagement • Beauty Services</p>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Professional Makeup & Beauty Parlour in Jaipur</h1>
+      <p>Bridal Makeup • Hair Styling • Beauty Services</p>
 
-    <a href="tel:+917732816412" class="btn">Call Now</a>
-    <button>View Services</button>
+      <div class="hero-buttons">
+        <a href="tel:+917732816412" class="btn">Call Now</a>
+        <a href="#services" class="btn outline">View Services</a>
+      </div>
+    </div>
   </section>
 
   <!-- ================= SERVICES ================= -->
-  <section id="services">
+  <section id="services" class="section">
     <h2>Our Beauty Services</h2>
 
-    <div>
-      <h3>Makeup Services</h3>
-      <ul>
-        <li>Bridal Makeup (HD / Airbrush)</li>
-        <li>Engagement & Reception Makeup</li>
-        <li>Party & Festival Makeup</li>
-      </ul>
-    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Bridal Makeup</h3>
+        <p>HD & Airbrush bridal makeup with premium products.</p>
+      </div>
 
-    <div>
-      <h3>Hair & Styling</h3>
-      <ul>
-        <li>Bridal Hairstyling</li>
-        <li>Traditional & Modern Hair Buns</li>
-      </ul>
-    </div>
+      <div class="card">
+        <h3>Party Makeup</h3>
+        <p>Elegant and glamorous makeup for events and parties.</p>
+      </div>
 
-    <div>
-      <h3>Beauty & Skin Care</h3>
-      <ul>
-        <li>Facials & Cleanups</li>
-        <li>Threading & Waxing</li>
-      </ul>
+      <div class="card">
+        <h3>Hair Styling</h3>
+        <p>Traditional & modern hairstyles for all occasions.</p>
+      </div>
+
+      <div class="card">
+        <h3>Beauty Services</h3>
+        <p>Facials, cleanup, waxing, threading & skincare.</p>
+      </div>
     </div>
   </section>
 
   <!-- ================= PACKAGES ================= -->
-  <section id="packages">
+  <section id="packages" class="section light">
     <h2>Popular Packages</h2>
 
-    <div>
-      <h3>Bridal Makeup Package</h3>
-      <p>Complete bridal makeup with premium products.</p>
-      <button>Enquire Now</button>
-    </div>
+    <div class="cards">
+      <div class="card highlight">
+        <h3>Bridal Package</h3>
+        <p>Complete bridal makeup, hairstyle & draping.</p>
+      </div>
 
-    <div>
-      <h3>Party Makeup Package</h3>
-      <p>Glamorous or natural makeup for parties.</p>
-      <button>Enquire Now</button>
+      <div class="card">
+        <h3>Engagement / Reception</h3>
+        <p>Soft, radiant makeup for special functions.</p>
+      </div>
+
+      <div class="card">
+        <h3>Party Package</h3>
+        <p>Perfect glam or natural look for parties.</p>
+      </div>
     </div>
   </section>
 
   <!-- ================= OUR WORK ================= -->
-  <section id="gallery">
+  <section id="gallery" class="section">
     <h2>Our Work</h2>
-    <p>Some of our recent makeup transformations.</p>
+    <p class="subtitle">Real makeup work by Bhavana Beauty Parlour</p>
 
-    <div>
-      <p><strong>Bridal Makeup Look</strong><br>Elegant bridal makeup with flawless finish.</p>
-      <p><strong>Party Makeup Look</strong><br>Modern glam makeup for events.</p>
-      <p><strong>Engagement Makeup Look</strong><br>Soft and radiant engagement makeup.</p>
-      <p><strong>Hairstyling</strong><br>Professional bridal & party hairstyles.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="img1.jpeg" alt="Bridal Makeup by Bhavana Beauty Parlour Jaipur">
+        <p>Bridal Makeup Look</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img1.jpeg" alt="Party Makeup by Bhavana Beauty Parlour Jaipur">
+        <p>Party Makeup Look</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img1.jpeg" alt="Engagement Makeup by Bhavana Beauty Parlour Jaipur">
+        <p>Engagement Makeup Look</p>
+      </div>
     </div>
   </section>
 
   <!-- ================= ABOUT ================= -->
-  <section id="about">
+  <section id="about" class="section light">
     <h2>About Bhavana Beauty Parlour</h2>
 
-    <!-- SHOP IMAGE -->
-    <img src="shop.jpg" alt="Bhavana Beauty Parlour – Jaipur" class="shop-image" />
+    <img
+      src="img1.jpeg"
+      alt="Bhavana Beauty Parlour – Jaipur"
+      class="about-image"
+    />
 
     <p>
       Bhavana Beauty Parlour is a professional makeup and beauty studio based in Jaipur,
-      offering trusted bridal, party and beauty services.
+      trusted for bridal makeup, hair styling and beauty services.
     </p>
   </section>
 
   <!-- ================= CONTACT ================= -->
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contact & Booking</h2>
 
     <p>
@@ -121,25 +137,25 @@
 
     <p><strong>Phone:</strong> +91 7732816412</p>
 
-    <a href="tel:+917732816412" class="btn">Call Now</a>
+    <div class="contact-buttons">
+      <a href="tel:+917732816412" class="btn">Call Now</a>
 
-    <a
-      href="https://wa.me/917732816412?text=Hello%20Bhavana%20Beauty%20Parlour%2C%20I%20would%20like%20to%20know%20about%20your%20services."
-      class="btn whatsapp"
-      target="_blank"
-    >
-      Chat on WhatsApp
-    </a>
+      <a
+        href="https://wa.me/917732816412?text=Hello%20Bhavana%20Beauty%20Parlour%2C%20I%20would%20like%20to%20know%20about%20your%20services."
+        class="btn whatsapp"
+        target="_blank"
+      >
+        Chat on WhatsApp
+      </a>
+    </div>
   </section>
 
-  <!-- ================= FOOTER (META IMPORTANT) ================= -->
-  <footer>
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
     <p>© 2026 Bhavana Beauty Parlour</p>
     <p>Jaipur, Rajasthan – India</p>
-
     <p>📞 Phone: +91 7732816412</p>
     <p>📧 Email: bhavanabeautyshop0@gmail.com</p>
-
     <p>Bridal Makeup | Hair Styling | Beauty Services</p>
   </footer>
 
