@@ -42,20 +42,24 @@ body {
   color: #d63384;
 }
 
-/* HOME (NO IMAGE) */
+./* HOME (TEXT ONLY, PROPER HEIGHT) */
 .home {
-  padding: 140px 40px 100px;
+  min-height: 70vh;
+  padding: 160px 40px 120px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .home h1 {
   font-size: 42px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .home p {
   font-size: 18px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .home-buttons {
@@ -63,6 +67,7 @@ body {
   justify-content: center;
   gap: 15px;
 }
+
 
 /* SECTIONS */
 .section {
