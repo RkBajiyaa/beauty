@@ -42,34 +42,26 @@ body {
   color: #d63384;
 }
 
-/* HERO */
-.hero {
-  height: 100vh;
-  background:
-    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("img1.jpeg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* HOME (NO IMAGE) */
+.home {
+  padding: 140px 40px 100px;
   text-align: center;
-  color: #fff;
-  padding-top: 80px;
 }
 
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
+.home h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
 }
 
-.hero p {
+.home p {
   font-size: 18px;
   margin-bottom: 25px;
 }
 
-.hero-buttons {
+.home-buttons {
   display: flex;
-  gap: 15px;
   justify-content: center;
+  gap: 15px;
 }
 
 /* SECTIONS */
@@ -99,7 +91,8 @@ body {
 
 .btn.outline {
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #d63384;
+  color: #d63384;
 }
 
 .btn.whatsapp {
@@ -126,20 +119,16 @@ body {
   transform: translateY(-8px);
 }
 
-.card.highlight {
-  background: linear-gradient(135deg, #ffe6f0, #fff);
-}
-
 /* GALLERY */
-.gallery-grid {
+.gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
 }
 
 .gallery-item img {
   width: 100%;
-  border-radius: 16px;
+  border-radius: 18px;
 }
 
 .gallery-item p {
@@ -147,12 +136,12 @@ body {
   font-weight: 500;
 }
 
-/* ABOUT */
-.about-image {
-  max-width: 350px;
+/* SHOP IMAGE */
+.shop-image {
+  max-width: 420px;
   width: 100%;
-  border-radius: 20px;
-  margin: 25px auto;
+  border-radius: 18px;
+  margin: 30px auto;
   display: block;
 }
 
@@ -170,15 +159,15 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 34px;
+  .home h1 {
+    font-size: 32px;
   }
 
   .section {
     padding: 70px 25px;
   }
 
-  .hero-buttons {
+  .home-buttons {
     flex-direction: column;
   }
 }
